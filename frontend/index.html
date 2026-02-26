@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>📚 Biblioteca Digital</h1>
+
+    <!-- REGISTRAR LIBRO -->
+    <section>
+        <h2>Registrar Libro</h2>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="autor" placeholder="Autor">
+        <input type="number" id="anio" placeholder="Año">
+        <input type="number" id="paginas" placeholder="Páginas">
+        <button onclick="registrarLibro()">Registrar</button>
+    </section>
+
+    <!-- BUSCAR LIBRO -->
+    <section>
+        <h2>Buscar Libro</h2>
+        <input type="text" id="buscarNombre" placeholder="Nombre">
+        <button onclick="buscarLibro()">Buscar</button>
+    </section>
+
+    <!-- LISTAR LIBROS -->
+    <section>
+        <h2>Lista de Libros</h2>
+        <button onclick="listarLibros()">Actualizar Lista</button>
+        <ul id="listaLibros"></ul>
+    </section>
+
+    <!-- REGISTRAR PRÉSTAMO -->
+    <section>
+        <h2>Registrar Préstamo</h2>
+        <input type="number" id="libroId" placeholder="ID del Libro">
+        <input type="text" id="usuarioNombre" placeholder="Nombre Usuario">
+        <input type="email" id="usuarioCorreo" placeholder="Correo Usuario">
+        <button onclick="registrarPrestamo()">Prestar</button>
+    </section>
+
+    <!-- DEVOLVER LIBRO -->
+    <section>
+        <h2>Devolver Libro</h2>
+        <input type="number" id="prestamoId" placeholder="ID Préstamo">
+        <button onclick="devolverLibro()">Devolver</button>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
