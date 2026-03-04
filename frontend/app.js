@@ -1,8 +1,6 @@
 const API_URL = "http://localhost:8000";
 
-// =============================
 // REGISTRAR LIBRO
-// =============================
 async function registrarLibro() {
 
     const data = {
@@ -23,9 +21,7 @@ async function registrarLibro() {
 }
 
 
-// =============================
 // LISTAR LIBROS
-// =============================
 async function listarLibros() {
 
     const response = await fetch(`${API_URL}/libros`);
@@ -42,9 +38,7 @@ async function listarLibros() {
 }
 
 
-// =============================
 // BUSCAR LIBRO
-// =============================
 async function buscarLibro() {
 
     const nombre = document.getElementById("buscarNombre").value;
@@ -56,9 +50,7 @@ async function buscarLibro() {
 }
 
 
-// =============================
 // REGISTRAR PRÉSTAMO
-// =============================
 async function registrarPrestamo() {
 
     const data = {
@@ -80,9 +72,7 @@ async function registrarPrestamo() {
 }
 
 
-// =============================
 // DEVOLVER LIBRO
-// =============================
 async function devolverLibro() {
 
     const id = document.getElementById("prestamoId").value;

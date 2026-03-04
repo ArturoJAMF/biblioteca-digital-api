@@ -3,10 +3,7 @@ from typing import Literal
 from datetime import datetime
 
 
-# -----------------------------
 # MODELO LIBRO
-# -----------------------------
-
 class Libro(BaseModel):
     nombre: str = Field(
         min_length=2,
@@ -27,18 +24,14 @@ class Libro(BaseModel):
         return value
 
 
-# -----------------------------
 # MODELO USUARIO
-# -----------------------------
 
 class Usuario(BaseModel):
     nombre: str = Field(min_length=2, max_length=100)
     correo: EmailStr
 
 
-# -----------------------------
 # MODELO PRESTAMO
-# -----------------------------
 
 class Prestamo(BaseModel):
     libro_id: int
